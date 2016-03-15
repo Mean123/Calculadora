@@ -272,11 +272,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="X"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MULTIPLICACIONActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="DIVISION">
           <Properties>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DIVISIONActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="RESTA">
           <Properties>

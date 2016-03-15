@@ -151,8 +151,18 @@ public class Calcu extends javax.swing.JFrame {
         });
 
         MULTIPLICACION.setText("X");
+        MULTIPLICACION.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MULTIPLICACIONActionPerformed(evt);
+            }
+        });
 
         DIVISION.setText("/");
+        DIVISION.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DIVISIONActionPerformed(evt);
+            }
+        });
 
         RESTA.setText("-");
         RESTA.addActionListener(new java.awt.event.ActionListener() {
@@ -389,8 +399,30 @@ return respuesta;
     }//GEN-LAST:event_RESULTADOActionPerformed
 
     private void RESTAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RESTAActionPerformed
-        // TODO add your handling code here:
+  
+          if (!PANTALLA.getText().equals("-")) {
+            memoria1=PANTALLA.getText();
+            signo="-";
+            PANTALLA.setText("");
+        }
     }//GEN-LAST:event_RESTAActionPerformed
+
+    private void MULTIPLICACIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MULTIPLICACIONActionPerformed
+        
+          if (!PANTALLA.getText().equals("-")) {
+            memoria1=PANTALLA.getText();
+            signo="*";
+            PANTALLA.setText("");
+        }
+    }//GEN-LAST:event_MULTIPLICACIONActionPerformed
+
+    private void DIVISIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DIVISIONActionPerformed
+         if (!PANTALLA.getText().equals("-")) {
+            memoria1=PANTALLA.getText();
+            signo="/";
+            PANTALLA.setText("");
+        }
+    }//GEN-LAST:event_DIVISIONActionPerformed
 
     /**
      * @param args the command line arguments
